@@ -41,13 +41,6 @@ body {
   overflow-x: hidden;
   /* Prevents horizontal scrolling for ticker tape */
 
-
-
-
-
-
-
-
 }
 
 /* https://www.gradient-animator.com/ */
@@ -67,17 +60,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* Typography */
 
 h1 {
   font-size: 5em;
@@ -85,6 +68,12 @@ h1 {
 
 h2 {
   font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: .2em;
+
 }
 
 
@@ -125,6 +114,14 @@ header {
   height: 5vh;
 }
 
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+
+/* HTML5 Canvas Drawing Tool Area */
+
 canvas {
   z-index: 20;
   position: absolute;
@@ -132,13 +129,9 @@ canvas {
   right: 0;
   bottom: 0;
   left: 0;
-
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
-}
+
 
 /* Blinking Text */
 
@@ -156,9 +149,17 @@ canvas {
 /* Hero */
 
 .hero {
-
   width: 100vw;
   min-height: 90vh;
+
+}
+
+
+.projects {
+  border: 1px dotted white;
+  width: 100vw;
+  min-height: 300vh;
+  margin: 1em;
 
 }
 
