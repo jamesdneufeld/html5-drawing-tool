@@ -178,7 +178,7 @@ canvas {
 
   100% {
     -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-150%, 0, 0);
   }
 }
 
