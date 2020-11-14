@@ -35,11 +35,47 @@ body {
   font-family: var(--body-typeface);
   background: rgb(231, 216, 201);
   background: linear-gradient(45deg, rgba(231, 216, 201, 1) 0%, rgba(236, 248, 248, 1) 100%);
+  background-size: 400% 400%;
+  animation: gradient-animation 5s ease infinite;
   color: var(--body-colour);
   overflow-x: hidden;
   /* Prevents horizontal scrolling for ticker tape */
 
+
+
+
+
+
+
+
 }
+
+/* https://www.gradient-animator.com/ */
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 25% 0%
+  }
+
+  50% {
+    background-position: 76% 100%
+  }
+
+  100% {
+    background-position: 25% 0%
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
