@@ -157,10 +157,10 @@ canvas {
 
 
 .projects {
-  border: 1px dotted white;
-  width: 100vw;
+  border: 4px dotted white;
+  width: 98vw;
   min-height: 300vh;
-  margin: 1em;
+  margin: 1vw;
 
 }
 
