@@ -102,9 +102,7 @@ img {
 
 /* Same padding on all major elements */
 header,
-footer,
-.hero,
-.projects-grid {
+footer {
   padding: 2em;
 }
 
