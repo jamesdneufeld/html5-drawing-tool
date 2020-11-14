@@ -42,6 +42,16 @@ body {
 }
 
 
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+
 a {
   text-decoration: none;
   color: #333;
@@ -92,6 +102,18 @@ canvas {
 .logo {
   width: 50px;
   height: 50px;
+}
+
+/* Blinking Text */
+
+.blink {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 
@@ -200,7 +222,7 @@ canvas {
   .hero {
     background: ;
     width: 100vw;
-    padding: 0em 15em;
+    padding: 0 5em;
     min-height: 90vh;
     display: flex;
     justify-content: center;
