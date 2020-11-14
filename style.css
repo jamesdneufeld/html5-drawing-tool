@@ -99,8 +99,12 @@ img {
 
 /* Layout */
 
+
+/* Same padding on all major elements */
 header,
-footer {
+footer,
+.hero,
+.projects-grid {
   padding: 2em;
 }
 
@@ -115,10 +119,14 @@ header {
   height: 5vh;
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
+.branding {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 
 /* HTML5 Canvas Drawing Tool Area */
@@ -260,9 +268,7 @@ canvas {
 @media (min-width: 768px) {
 
   .hero {
-    background: ;
     width: 100vw;
-    padding: 0 5em;
     min-height: 90vh;
     display: flex;
     justify-content: center;
