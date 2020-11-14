@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sara Nguyen</title>
+  <link rel="shortcut icon" href="sara-nguyen--favicon.png" type="image/png">
+  <meta name="description" content="Sara Nguyen is a multi-disciplinary graphic designer based in Vancouver. She focuses on branding and interactive design with additional skills in art direction, editorial design, type design, illustration, photography and motion graphic animation design.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <script>
+    var canvas, context, mouse = {
+      x: 0,
+      y: 0
+    };
+
+    init();
+
+    function init() {
+
+      canvas = document.createElement('canvas');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      canvas.style.cursor = 'crosshair';
+
+      context = canvas.getContext('2d');
+      context.strokeStyle = 'rgb(0,0,0)';
+      context.lineWidth = 2;
+
+      document.addEventListener('mousedown', onDocumentMouseDown, false);
+      document.addEventListener('mouseup', onDocumentMouseUp, false);
+
+      document.body.appendChild(canvas);
+
+    }
+
+    function onDocumentMouseDown(event) {
+
+      mouse.x = event.clientX;
+      mouse.y = event.clientY;
+
+      document.addEventListener('mousemove', onDocumentMouseMove, false);
+
+    }
+
+    function onDocumentMouseUp(event) {
+
+      document.removeEventListener('mousemove', onDocumentMouseMove, false);
+
+    }
+
+    function onDocumentMouseMove(event) {
+
+      context.beginPath();
+      context.moveTo(mouse.x, mouse.y);
+      context.lineTo(event.clientX, event.clientY);
+      context.stroke();
+
+      mouse.x = event.clientX;
+      mouse.y = event.clientY;
+
+    }
+
+  </script>
+  <header>
+    <div class="work"><a href="index.html">work</a></div>
+    <div class="branding"><a href="index.html">
+        <img src="logo.svg" class="logo"></a></div>
+    <div class="about"><a href="about.html">about</a></div>
+  </header>
+
+
+
+  <section class="hero">
+    <h1>Click and drag your mouse to draw. Right click to save.</h1>
+  </section>
+  <section class="projects">
+  </section>
+
+
+
+
+  <footer class="extra-large-footer">
+    <ul class="footer-columns">
+      <li>About</li>
+      <li>Recognitions</li>
+      <li>Contact</li>
+    </ul>
+  </footer>
+
+  <footer class="copyright-footer">
+    <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+  </footer>
+  <footer class="ticker-wrap">
+    <div class="ticker">
+
+      <div class="ticker__item"><a href="#">Wildewater</a></div>
+      <div class="ticker__item"><a href="#">Type Unwrapped [Editorial Book Design]</a></div>
+      <div class="ticker__item"><a href="#">Neueme</a></div>
+      <div class="ticker__item"><a href="#">Type Friends</a></div>
+      <div class="ticker__item"><a href="#">Coinhub [Interactive]</a></div>
+      <div class="ticker__item"><a href="#">Capstone</a></div>
+      <div class="ticker__item"><a href="#">Wildewater</a></div>
+      <div class="ticker__item"><a href="#">(っ◕‿◕)っ♥   (♥♥,)   ≧◡≦   ᵔ.ᵔ I am at Rethink for practicum</a></div>
+      <div class="ticker__item"><a href="#">Yes, Judy &amp; Ben, I am bloggging about practicum.</a></div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
